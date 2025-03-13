@@ -14,6 +14,11 @@ variable "fastapi_container_name" {
   default     = "madebayofastapi"
 }
 
+variable "fastapi_dns_label" {
+  description = "DNS label for FastAPI container"
+  type        = string
+}
+
 variable "fastapi_image" {
   description = "Docker image for FastAPI"
   type        = string
@@ -30,3 +35,5 @@ variable "memory" {
   type        = number
   default     = 4
 }
+
+
