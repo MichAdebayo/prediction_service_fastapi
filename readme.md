@@ -96,7 +96,7 @@ python populate_db.py
 
 4. **Run Tests**
 ```bash
-python test_app.py
+python tests/test_app.py
 ```
 
 5. **Environment Setup**
