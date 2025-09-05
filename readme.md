@@ -192,7 +192,7 @@ The project also supports advanced deployment approaches:
 
 - **Level 1:** Manual deployment via the Azure portal (using ACI for both the FastAPI and Django applications, and Azure SQL Database).
 - **Level 2:** Automation via the deploy.sh script using the Azure CLI.
-- **[Bonus] Level 3:** Use Terraform for declarative infrastructure management.
+- **Level 3:** Use Terraform for declarative infrastructure management.
 
 
 ## Conclusion
