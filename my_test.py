@@ -1,11 +1,15 @@
-import json
 import requests
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Base URL of your FastAPI server
 base_url = "http://127.0.0.1:8000"
 
 # Authentication token (ensure you have a valid token from the `/auth/login` endpoint)
-auth_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtaWtlQHRlc3QuY29tIiwiaWQiOjEsImV4cCI6MTc0MTE4MjM3M30.XYa7lJqngQoVw37mjfk6DZsFeK5K4Iq8HUChSH1nVec"
+auth_token_test = os.getenv("AUTH_TOKEN_TEST")
 
 
 # Loan request data
@@ -29,7 +33,7 @@ loan_request_data = {
 # Headers for the request
 headers = {
     "Content-Type": "application/json",
-    "Authorization": f"Bearer {auth_token}"
+    "Authorization": f"Bearer {auth_token_test}"
 }
 
 # Send POST request to the `/loans/request` endpoint
